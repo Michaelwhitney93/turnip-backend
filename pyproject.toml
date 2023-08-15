@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "turnip"
+version = "0.1.0"
+description = ""
+authors = ["Michael Dorman"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.3.2"
+sqlalchemy = "^2.0.20"
+invoke = "^2.2.0"
+black = "^23.7.0"
+mypy = "^1.5.0"
+flake8 = "^6.1.0"
+autopep8 = "^2.0.2"
+yapf = "^0.40.1"
+isort = "^5.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.autopep8]
+max_line_length = 120
